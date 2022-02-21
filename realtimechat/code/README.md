@@ -1,3 +1,2 @@
-# ipay
-Payment Application Prototype
-thank you
+#Let's chat
+Real Time chat application prototype
