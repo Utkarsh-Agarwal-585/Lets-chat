@@ -1,0 +1,21 @@
+.image1{
+    height:200px;
+    width:100vw;
+    background-size:cover;
+    margin:-1px;
+}
+
+.new-background-color{
+    --background: #128C7E;
+    color:white;
+}
+.money{
+    justify-content: center;
+}
+ion-content{
+    --background: #ECE5DD !important;
+}
+a{
+    color:black;
+    text-decoration: none;
+}

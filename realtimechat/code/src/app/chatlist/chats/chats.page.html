@@ -1,0 +1,16 @@
+
+
+<ion-content fullscreen class="ion-padding">
+  <ion-list>
+    <ion-item *ngFor="let user of users | keyvalue " text-wrap (click) = "goToChat(user)">
+      <ion-avatar slot="start">
+        <img src="../../assets/images/avatar-finn.png">
+      </ion-avatar>
+      <ion-label>
+        <h2>{{ user.value.fullname }}</h2>
+        <p>Listen, I've had a pretty messed up day...</p>
+        
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

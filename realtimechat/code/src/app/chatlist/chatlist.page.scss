@@ -1,0 +1,31 @@
+:root {
+    --ion-safe-area-top: 20px;
+    --ion-safe-area-bottom: 22px;
+  }
+
+   ion-title.md.title-default.hydrated {
+    display:  inline-block;
+    padding-left: 40px;
+    
+}
+
+  .headerDown{
+     margin-top: 50px;
+    
+  }
+   .ion-color-secondary {
+   --ion-color-base:  #128C7E!important;
+ }
+ .ion-color-primary{
+    --ion-color-base: #ECE5DD !important;
+ }
+
+ .testclass{ font-size: 0.8rem !important; text-transform: uppercase; font-weight: 600 !important;}
+
+ ion-icon.md.hydrated{
+   font-size:x-large;
+ }
+ ion-tab-button[aria-selected=true] {
+  border-bottom: 3px solid white;
+  
+}

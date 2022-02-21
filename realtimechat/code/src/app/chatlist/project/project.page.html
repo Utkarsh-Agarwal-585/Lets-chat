@@ -1,0 +1,12 @@
+<ion-content fullscreen class="ion-padding">
+  <ion-list>
+    <ion-item *ngFor="let proj of projects | keyvalue" text-wrap (click) = "goToChat(proj)">
+      
+      <ion-label>
+        <h2>{{ proj.value.name }}</h2>
+        <p>{{ proj.value.msg }}</p>
+        
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

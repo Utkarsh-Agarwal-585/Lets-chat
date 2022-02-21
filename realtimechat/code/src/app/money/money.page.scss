@@ -1,0 +1,40 @@
+::placeholder{
+    color:rgba(128, 128, 128, 0.596);
+}
+ion-item{
+    color:black;
+}
+ion-icon{
+    font-size:30px;
+    color:black;
+}
+.new-background-color{
+    --background: blue;
+    color:white;
+}
+.ion-input{
+    width:90%;
+}
+.items{
+    margin-top:-80%;
+    z-index:-1;
+}
+ion-label{
+    span{
+        color:green;
+        margin-left:1%;
+    }
+}
+.card-icon{
+    border:0px solid;
+    background-color:green;
+    color:white;
+    border-radius:50px;
+    padding:34px;
+    margin-top:30px;
+    margin-left:35%;
+}
+
+.center{
+    text-align:center;
+}

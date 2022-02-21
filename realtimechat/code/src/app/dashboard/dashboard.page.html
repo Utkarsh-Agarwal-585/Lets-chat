@@ -1,0 +1,111 @@
+<ion-app>
+  <ion-menu side="start" content-id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title id="tool">Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item>
+          <ion-icon name="person-circle" slot="start"></ion-icon>
+          <ion-label><a [routerLink]="['/profile']">Profile</a></ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="paper-plane" slot="start"></ion-icon>
+          <ion-label>Outbox</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="heart" slot="start"></ion-icon>
+          <ion-label>Favorites</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="archive" slot="start"></ion-icon>
+          <ion-label>Archived</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="trash" slot="start"></ion-icon>
+          <ion-label>Trash</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="warning" slot="start"></ion-icon>
+          <ion-label>Spam</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="settings" slot="start"></ion-icon>
+          <ion-label><a [routerLink]="['/chat-settings']">Settings</a></ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="person-circle" slot="start"></ion-icon>
+          <ion-label><a (click)="signOut()">Signout</a></ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar class="new-background-color">
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Dashboard</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <div>
+        <img src="../../assets/images/dashboard.jpg" class="image1">
+      </div>
+      <div class="money">
+      <h5>I Pe</h5>
+    <p>I pe app (Prototype@i Pe) I pe app (Prototype@i Pe)</p>
+    <div>
+      <ion-row>
+        <ion-col>
+          <p>Sent Money</p>
+        </ion-col>
+        <ion-col>
+          <p>Send GiftCards</p>
+        </ion-col>
+      </ion-row>
+    
+      <ion-row>
+        <ion-col>
+          <p>Share</p>
+        </ion-col>
+        <ion-col>
+          <p [routerLink]="['/money']">Withdraw Money</p>
+        </ion-col>
+      </ion-row>
+    </div>
+    </div>
+
+    <!--<ion-button type="submit" color="danger" expand="block" (click)="signOut()">Signout</ion-button>-->
+  <p [routerLink]="['/chatlist']">chat</p> 
+
+  <ul id="notes"></ul>
+  <div id="usersConnected"></div>
+  
+<p>{{newNote}}</p>
+  <div (click)="abc()">Create a new note :</div>
+  
+
+  <ul id="notes"></ul>
+  <div id="usersConnected"></div>
+  <div id="newNote">Create a new note</div>
+  <!-- {{!-- <div id="get_status">Create a get note</div> --}} -->
+  <div id="comment_box" style="padding:5%;">
+    <input [(ngModel)] = "message" type="text" id="comment" rows="5" cols="70"><br /><br />
+    <input type="button" id="add_status" value="Add Status" (click)="add()">
+    <button type="button" id="display">get Status </button>
+  </div>
+  <div id="show_comments" class="jumbotron" style="width: 38%;
+                height: 100%;
+                padding: 2%;
+                margin-left:5%;
+                ">
+  </div>
+  </ion-content>
+  </div>
+</ion-app>
+

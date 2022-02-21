@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar class="new-background-color">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Register Patner</ion-title>
+  </ion-toolbar>
+</ion-header>
+  
+
+<ion-content>
+    <div>
+      <h5>Please upload your documents and phone number</h5>
+    </div>
+    <div class="grey">
+      <p>To operate as a Local Patner with senpay you have to have a local address and permanent internet Access.</p>
+    </div>
+    <ion-button (click)="openModal()" expand="block" class="pics" color="primary">A front picture of your<br> ID Card(ID,Passport.....)</ion-button>
+    <ion-button (click)="openModal()" expand="block" class="pics" color="primary">A picture of your Bank<br> RIB(account number)</ion-button>
+    <ion-button (click)="openModal()" expand="block" class="pics" color="primary">A recent picture of you <br>(centereed face, sufficient brigntness)</ion-button>
+    <ion-button expand="block" color="primary">Submit</ion-button>
+  </ion-content>
+

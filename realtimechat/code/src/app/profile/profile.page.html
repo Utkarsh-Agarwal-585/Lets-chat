@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/chat-contact"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+  
+<ion-content padding>
+  <form #f="ngForm">
+  <ion-list>
+    <ion-item class="form-group"> 
+      <ion-label>First Name:</ion-label>
+      <ion-input name="name" [(ngModel)]="fName" class="form-control" #name="ngModel" required ></ion-input>
+    <div *ngIf="f.submitted && name.invalid">
+      <p *ngIf="name.errors.required">Name is required</p>
+    </div>
+    </ion-item> 
+  </ion-list>
+  <ion-list>
+    <ion-item class="form-group"> 
+      <ion-label>Last Name:</ion-label>
+      <ion-input name="lname" [(ngModel)]="lName" class="form-control" #name="ngModel" required ></ion-input>
+    <div *ngIf="f.submitted && f.controls.lname.invalid">
+      <p *ngIf="f.controls.lname.errors.required"></p>
+    </div>
+    </ion-item> 
+  </ion-list>
+
+  <ion-list>
+    <ion-item class="form-group"> 
+      <ion-label>email:</ion-label>
+      <ion-input name="email" disabled [(ngModel)]="eMail" class="form-control" #name="ngModel" required ></ion-input>
+    <div *ngIf="f.submitted && f.controls.email.invalid">
+      <p *ngIf="f.controls.email.errors.required"></p>
+    </div>
+    </ion-item> 
+  </ion-list>
+
+  <ion-list>
+    <ion-item class="form-group"> 
+      <ion-label>Contact number:</ion-label>
+      <ion-input name="cNo" [(ngModel)]="cNo" class="form-control" #name="ngModel" required pattern='^-?[0-9]+$'></ion-input>
+    <div *ngIf="f.submitted && f.controls.cNo.invalid">
+      <p *ngIf="f.controls.cNo.errors.required"></p>
+    </div>
+    </ion-item> 
+  </ion-list>
+  <ion-button expand="block" (click)="updateUser()" [disabled]="f.invalid" required>Update User</ion-button>
+</form>
+</ion-content>
+

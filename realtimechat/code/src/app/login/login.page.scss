@@ -1,0 +1,31 @@
+a{
+    text-decoration: none;
+    color:#128C7E;
+    justify-content: space-between;
+}
+.register{
+    margin-left:65%;
+}
+form{
+   // background-image: url('../../assets/images/image1.jpg') !important;
+    background-size:cover;
+    height:87vh;
+    //margin-top:-1%;
+}
+#tool{
+    background-color: #128C7E !important;
+    color:white;
+    padding:20px;
+}
+.green-color{
+    background-color: #128C7E !important;
+    color:white;
+}
+.black-color{
+    background-color:black!important;
+    border-radius:4px;
+}
+
+ion-item{
+    padding-top:40px;
+}

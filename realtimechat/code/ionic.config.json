@@ -1,0 +1,7 @@
+{
+  "name": "ionicex",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
